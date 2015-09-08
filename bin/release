@@ -7,5 +7,5 @@ cat <<-YAML
 ---
 default_process_types:
   web: node build/bundle/main.js
-  worker: node build/bundle/main.js
+  worker: env PROCESS_TYPE='worker' node build/bundle/main.js
 YAML
