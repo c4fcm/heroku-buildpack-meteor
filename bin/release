@@ -8,4 +8,5 @@ cat <<-YAML
 default_process_types:
   web: node build/bundle/main.js
   stream_worker: env PROCESS_TYPE='stream_worker' node build/bundle/main.js
+  reset_es_worker: env PROCESS_TYPE='reset_es_worker' node build/bundle/main.js
 YAML
